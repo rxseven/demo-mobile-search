@@ -1,0 +1,44 @@
+// Global styles
+@import '../../../styles/base/settings';
+@import '../../../styles/mixins/transition';
+
+// Variables
+$color-bright: #fff;
+$color-light: rgba(255, 255, 255, 0.5);
+
+// Container
+.container {
+  align-items: center;
+  background-color: $color-primary;
+  display: flex;
+  height: $header-height-xs;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+
+  @media (min-width: $breakpoint-sm) {
+    height: $header-height-sm;
+  }
+}
+
+// Branding
+.brand {
+  text-align: center;
+
+  > .link {
+    @include transition-link;
+    color: $color-bright;
+
+    &:hover {
+      color: $color-light;
+      text-decoration: none;
+    }
+
+    &:global(.active) {
+      color: $color-light;
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Global styles
+@import '../../../styles/base/settings';
+
+// Container
+.container {
+  margin-bottom: $footer-height-xs;
+  margin-top: $header-height-xs;
+
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $footer-height-sm;
+    margin-top: $header-height-sm;
+  }
+}

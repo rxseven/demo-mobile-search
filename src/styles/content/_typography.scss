@@ -1,0 +1,15 @@
+:global(.headline) {
+  font-size: 1.5rem;
+}
+
+:global(.subheadline) {
+  font-size: 1.25rem;
+}
+
+:global(.text-block) {
+  display: block;
+}
+
+:global(.text-end) {
+  margin-bottom: 0;
+}

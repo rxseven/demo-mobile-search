@@ -1,0 +1,5 @@
+/build
+/config
+/scripts
+/src/playground
+/src/registerServiceWorker.js
