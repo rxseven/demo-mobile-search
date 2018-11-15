@@ -1,4 +1,3 @@
-// @flow
 // Module dependencies
 import * as React from 'react';
 
@@ -8,11 +7,8 @@ import { Body, Document, Head, Title } from 'components/common/Page';
 // Styles
 import './styles.scss';
 
-// Types
-type Return = React.Node;
-
 // Component
-const Search = (): Return => (
+const Search = () => (
   <Document>
     <Head>
       <Title>Search | Search Flow</Title>
