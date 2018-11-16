@@ -1,4 +1,14 @@
-// Container
-.spinner {
-  display: block;
+// Bounce
+.bounce {
+  text-align: center;
+}
+
+// Fading circle
+.circle {
+  $element-spacing: 0.5rem;
+
+  display: inline-block;
+  height: 22px;
+  margin-left: $element-spacing !important;
+  margin-right: $element-spacing !important;
 }
