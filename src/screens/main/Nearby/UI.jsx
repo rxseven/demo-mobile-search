@@ -1,11 +1,13 @@
 // Module dependencies
 import * as React from 'react';
 
+import Category from 'components/common/Category/List';
 import Layout from 'components/common/Layout';
 import { Body, Document, Head, Title } from 'components/common/Page';
 
 // Constants
 import PATHS from 'constants/router/paths';
+import { CATEGORIES } from 'dummy';
 
 // Styles
 import './styles.scss';
@@ -33,6 +35,18 @@ class Nearby extends React.Component {
                 type="button"
                 value="What are you looking for?"
               />
+            </div>
+            <div styleName="section">
+              <Category data={CATEGORIES} onSelect={null} />
+            </div>
+            <div styleName="section">
+              <button
+                className="btn btn-primary btn-sm"
+                onClick={this.redirectSearch}
+                type="button"
+              >
+                More...
+              </button>
             </div>
             <div styleName="section">
               <h2 styleName="headline">Attractions near you</h2>
