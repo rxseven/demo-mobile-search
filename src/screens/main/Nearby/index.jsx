@@ -1,11 +1,11 @@
 // Module dependencies
-import React from 'react';
+import { connect } from 'react-redux';
 
 // Relative files
 import UI from './UI';
 
-// Component
-const Nearby = () => <UI />;
+// Connect component to application state
+const container = connect(null)(UI);
 
 // Module exports
-export default Nearby;
+export default container;
