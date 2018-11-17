@@ -1,0 +1,21 @@
+// Shared styles
+@import '../styles/shared';
+
+.item {
+  border-bottom: 1px solid $boder-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  > a {
+    color: $item-color;
+    display: block;
+    padding: 0.375rem 0.75rem;
+
+    &:hover {
+      background-color: $hover-background;
+      text-decoration: none;
+    }
+  }
+}

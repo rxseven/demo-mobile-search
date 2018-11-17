@@ -1,0 +1,13 @@
+// Global styles
+@import '../../../../styles/base/settings';
+
+// Variables
+$boder-color: #ced4da;
+$hover-background: $color-light;
+$item-color: #495057;
+
+// Placeholder selectors
+%border-radius {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
