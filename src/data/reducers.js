@@ -1,8 +1,10 @@
-// @flow
+// Module dependencies
+import { combineReducers } from 'redux-immutable';
 
-// Types
-type Action = { +type: string };
-type State = ?Object;
+// Reducers
+import search from './search/reducers';
 
-// Reducer
-export default (state: State = null, action: Action): State => state;
+// Combine reducers
+export default combineReducers({
+  search
+});
