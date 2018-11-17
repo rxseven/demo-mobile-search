@@ -1,5 +1,10 @@
 // Action types
-import { CATEGORY_SET } from './types';
+import { CATEGORY_RESET, CATEGORY_SET } from './types';
+
+// Reset selected category
+export const resetCategory = () => ({
+  type: CATEGORY_RESET
+});
 
 // Set selected category
 export const setCategory = (category, callback) => {
