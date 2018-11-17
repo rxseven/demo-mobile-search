@@ -19,6 +19,13 @@ class Nearby extends React.Component {
     this.props.history.push({ pathname: PATHS.main.search });
   };
 
+  // onSelect handler
+  selectCategory = (name) => {
+    this.props.actions.search.setCategory(name, () => {
+      this.redirectSearch();
+    });
+  };
+
   // Render component
   render() {
     return (
@@ -37,7 +44,7 @@ class Nearby extends React.Component {
               />
             </div>
             <div styleName="section">
-              <Category data={CATEGORIES} onSelect={null} />
+              <Category data={CATEGORIES} onSelect={this.selectCategory} />
             </div>
             <div styleName="section">
               <button
