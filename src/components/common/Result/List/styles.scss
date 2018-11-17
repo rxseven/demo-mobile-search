@@ -1,0 +1,19 @@
+// Global styles
+@import '../../../../styles/base/settings';
+
+.wrapper {
+  padding-top: 0;
+}
+
+.headline {
+  font: {
+    size: 1rem;
+    weight: $font-weight-normal;
+  }
+  margin-bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.highlight {
+  color: $color-primary;
+}
