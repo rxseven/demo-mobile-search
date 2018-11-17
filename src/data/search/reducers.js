@@ -1,8 +1,12 @@
 // Module dependencies
 import { fromJS } from 'immutable';
+import { createSelector } from 'reselect';
 
 // Action types
 import { CATEGORY_RESET, CATEGORY_SET, UNKNOWN } from './types';
+
+// Selectors
+import { getNode } from '../selectors';
 
 // State shape
 export const stateShape = {
@@ -28,3 +32,6 @@ export default (state = initialState, action = { type: UNKNOWN }) => {
       return state;
   }
 };
+
+// Get search state
+export const getSearch = createSelector(getNode, node => node.getIn(['search']));
