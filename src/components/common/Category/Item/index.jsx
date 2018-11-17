@@ -5,7 +5,7 @@ import React from 'react';
 import './styles.scss';
 
 // Component
-class CategoryItem extends React.Component {
+class Item extends React.Component {
   // Click handler
   handleClick = (event) => {
     // Prevent a browser from being refreshed
@@ -30,4 +30,4 @@ class CategoryItem extends React.Component {
 }
 
 // Module exports
-export default CategoryItem;
+export default Item;
