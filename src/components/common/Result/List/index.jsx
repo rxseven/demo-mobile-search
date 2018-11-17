@@ -17,7 +17,7 @@ class List extends React.Component {
     // Variables
     const { data, location, name } = this.props;
 
-    // Return elements
+    // View
     return (
       <div styleName="wrapper">
         <h2 styleName="headline">
