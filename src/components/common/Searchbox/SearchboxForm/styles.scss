@@ -1,0 +1,19 @@
+// Global styles
+@import '../../../../styles/base/settings';
+
+// Shared styles
+@import '../styles/shared';
+
+// Variables
+$space-around: 1.25rem;
+
+.form {
+  background: $color-primary;
+  left: 0;
+  height: $form-height;
+  padding-top: $space-around;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
