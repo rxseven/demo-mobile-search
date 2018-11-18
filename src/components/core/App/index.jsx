@@ -8,7 +8,6 @@ import ScrollMemory from 'react-router-scroll-memory';
 
 import Content from '../Content';
 import Footer from '../Footer';
-import Header from '../Header';
 import Main from '../Main';
 import Routes from '../Routes';
 import Wrapper from '../Wrapper';
@@ -23,7 +22,6 @@ const App = (): Return => (
       <ScrollMemory />
       <Location>
         <Wrapper>
-          <Header />
           <Content>
             <Main>
               <Routes />
