@@ -1,0 +1,11 @@
+// Global styles
+@import '../../../styles/base/settings';
+
+.normal {
+  color: $color-default;
+  font-weight: $font-weight-normal;
+}
+
+.highlight {
+  color: $color-primary;
+}
