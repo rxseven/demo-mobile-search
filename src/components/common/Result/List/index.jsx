@@ -12,13 +12,20 @@ import './styles.scss';
 
 // Component
 class List extends React.Component {
+  // Initial state
+  state = {
+    name: this.props.name,
+    location: this.props.location
+  };
+
   // Render list item
   renderItem = item => <Item item={item} key={item.id} onClick={this.props.onSelect} />;
 
   // Render component
   render() {
     // Variables
-    const { data, location, name } = this.props;
+    const { data } = this.props;
+    const { location, name } = this.state;
 
     // View
     return (
