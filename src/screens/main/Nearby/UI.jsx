@@ -4,6 +4,7 @@ import * as React from 'react';
 import Category from 'components/common/Category/List';
 import Layout from 'components/common/Layout';
 import { Body, Document, Head, Title } from 'components/common/Page';
+import { Searchbox, SearchboxBody, SearchboxForm } from 'components/common/Searchbox';
 
 // Constants
 import PATHS from 'constants/router/paths';
@@ -35,39 +36,39 @@ class Nearby extends React.Component {
         </Head>
         <Body>
           <Layout>
-            <div styleName="section">
-              <input
-                className="btn btn-outline-secondary btn-block"
-                onClick={this.redirectSearch}
-                type="button"
-                value="What are you looking for?"
-              />
-            </div>
-            <div styleName="section">
-              <Category data={CATEGORIES} onSelect={this.selectCategory} />
-            </div>
-            <div styleName="section">
-              <button
-                className="btn btn-primary btn-sm"
-                onClick={this.redirectSearch}
-                type="button"
-              >
-                More...
-              </button>
-            </div>
-            <div styleName="section">
-              <h2 styleName="headline">Attractions near you</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industrys standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                with desktop publishing software like Aldus PageMaker including versions of Lorem
-                Ipsum.
-              </p>
-            </div>
+            <Searchbox>
+              <SearchboxForm>
+                <h1 styleName="branding">Branding</h1>
+                <input
+                  className="btn btn-light btn-block"
+                  onClick={this.redirectSearch}
+                  type="button"
+                  value="What are you looking for?"
+                />
+              </SearchboxForm>
+              <SearchboxBody>
+                <div styleName="wrapper">
+                  <div styleName="category">
+                    <Category data={CATEGORIES} onSelect={this.selectCategory} />
+                    <div styleName="category-more">
+                      <button
+                        className="btn btn-secondary btn-sm"
+                        onClick={this.redirectSearch}
+                        type="button"
+                      >
+                        See more
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 styleName="headline">Attractions near you</h2>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </SearchboxBody>
+            </Searchbox>
           </Layout>
         </Body>
       </Document>
