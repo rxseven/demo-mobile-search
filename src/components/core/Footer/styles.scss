@@ -9,14 +9,16 @@ $color-active: $color-primary;
 // Container
 .container {
   border-top: #dfdedd solid 1px;
+  background-color: #fff;
   bottom: 0;
   color: #999;
   height: $footer-height-xs;
   left: 0;
   padding-top: 0.85rem;
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: center;
+  z-index: 1;
 
   a {
     @include transition-link;
