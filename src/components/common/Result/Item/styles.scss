@@ -1,1 +1,27 @@
-// No styles
+// Global styles
+@import '../../../../styles/base/settings';
+
+.headline {
+  color: $color-primary;
+  font-size: 1rem;
+}
+
+.details {
+  font-size: 0.85rem;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.txt-category {
+  font-size: 0.95rem;
+  color: #ffa300;
+}
+
+.txt-opening {
+  margin-bottom: 0.85rem;
+}
+
+.txt-description {
+  color: #666;
+}
