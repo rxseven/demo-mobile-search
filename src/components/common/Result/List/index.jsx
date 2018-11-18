@@ -42,8 +42,18 @@ class List extends React.Component {
           </When>
           <Otherwise>
             <div>
-              Your search {name && `of ${name}`} {location && `in ${location}`} did not match any
-              business.
+              Your search{' '}
+              {name && (
+                <React.Fragment>
+                  of <Text highlight>{name}</Text>
+                </React.Fragment>
+              )}{' '}
+              {location && (
+                <React.Fragment>
+                  in <Text highlight>{location}</Text>
+                </React.Fragment>
+              )}{' '}
+              did not match any business.
             </div>
           </Otherwise>
         </Choose>
