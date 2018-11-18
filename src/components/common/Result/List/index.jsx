@@ -2,6 +2,7 @@
 import React from 'react';
 
 // Components
+import Fixed from 'components/common/Fixed';
 import Text from 'components/common/Text';
 
 // Relative components
@@ -32,35 +33,43 @@ class List extends React.Component {
       <div styleName="wrapper">
         <Choose>
           <When condition={data.length}>
-            <h2 styleName="headline">
-              Search results{' '}
-              {name && (
-                <React.Fragment>
-                  of <Text highlight>{name}</Text>
-                </React.Fragment>
-              )}{' '}
-              {location && (
-                <React.Fragment>
-                  in <Text highlight>{location}</Text>
-                </React.Fragment>
-              )}
-            </h2>
-            <div>{data.map(this.renderItem)}</div>
+            <div styleName="title">
+              <Fixed>
+                <h2 styleName="headline">
+                  Search results{' '}
+                  {name && (
+                    <React.Fragment>
+                      of <Text highlight>{name}</Text>
+                    </React.Fragment>
+                  )}{' '}
+                  {location && (
+                    <React.Fragment>
+                      in <Text highlight>{location}</Text>
+                    </React.Fragment>
+                  )}
+                </h2>
+              </Fixed>
+            </div>
+            <div styleName="list">{data.map(this.renderItem)}</div>
           </When>
           <Otherwise>
-            <div>
-              Your search{' '}
-              {name && (
-                <React.Fragment>
-                  of <Text highlight>{name}</Text>
-                </React.Fragment>
-              )}{' '}
-              {location && (
-                <React.Fragment>
-                  in <Text highlight>{location}</Text>
-                </React.Fragment>
-              )}{' '}
-              did not match any business.
+            <div styleName="title">
+              <Fixed>
+                <h2 styleName="headline">
+                  Your search{' '}
+                  {name && (
+                    <React.Fragment>
+                      of <Text highlight>{name}</Text>
+                    </React.Fragment>
+                  )}{' '}
+                  {location && (
+                    <React.Fragment>
+                      in <Text highlight>{location}</Text>
+                    </React.Fragment>
+                  )}{' '}
+                  did not match any business.
+                </h2>
+              </Fixed>
             </div>
           </Otherwise>
         </Choose>
