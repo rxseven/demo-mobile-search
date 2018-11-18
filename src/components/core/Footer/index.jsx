@@ -4,6 +4,7 @@ import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Column, Container, Row } from 'components/common/Grid';
+import Layout from 'components/common/Layout';
 
 // Constants
 import PATHS from 'constants/router/paths';
@@ -20,19 +21,21 @@ const Footer = (): Return => (
     <Container>
       <Row>
         <Column>
-          <ul styleName="navigation">
-            <li>
-              <NavLink exact to={PATHS.main.nearby}>
-                Around Me
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={PATHS.main.search}>Search</NavLink>
-            </li>
-            <li>
-              <NavLink to={PATHS.main.profile}>My Profile</NavLink>
-            </li>
-          </ul>
+          <Layout>
+            <ul styleName="navigation">
+              <li>
+                <NavLink exact to={PATHS.main.nearby}>
+                  Around Me
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={PATHS.main.search}>Search</NavLink>
+              </li>
+              <li>
+                <NavLink to={PATHS.main.profile}>My Profile</NavLink>
+              </li>
+            </ul>
+          </Layout>
         </Column>
       </Row>
     </Container>
