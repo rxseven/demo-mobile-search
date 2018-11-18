@@ -21,12 +21,16 @@ class List extends React.Component {
   // Render component
   render() {
     // Variables
-    const { data, visibility } = this.props;
+    const {
+      data, onMouseOff, onMouseOn, visibility
+    } = this.props;
 
     // View
     return (
       <If condition={visibility && data.length}>
-        <ul styleName="suggestion">{data.map(this.renderItem)}</ul>
+        <ul onMouseEnter={onMouseOn} onMouseLeave={onMouseOff} styleName="suggestion">
+          {data.map(this.renderItem)}
+        </ul>
       </If>
     );
   }
