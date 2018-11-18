@@ -1,6 +1,9 @@
 // Module dependencies
 import React from 'react';
 
+// Components
+import Text from 'components/common/Text';
+
 // Relative components
 import Item from '../Item';
 
@@ -20,10 +23,30 @@ class List extends React.Component {
     // View
     return (
       <div styleName="wrapper">
-        <h2 styleName="headline">
-          Search results {name && `of ${name}`} {location && `in ${location}`}
-        </h2>
-        <div>{data.map(this.renderItem)}</div>
+        <Choose>
+          <When condition={data.length}>
+            <h2 styleName="headline">
+              Search results{' '}
+              {name && (
+                <React.Fragment>
+                  of <Text highlight>{name}</Text>
+                </React.Fragment>
+              )}{' '}
+              {location && (
+                <React.Fragment>
+                  in <Text highlight>{location}</Text>
+                </React.Fragment>
+              )}
+            </h2>
+            <div>{data.map(this.renderItem)}</div>
+          </When>
+          <Otherwise>
+            <div>
+              Your search {name && `of ${name}`} {location && `in ${location}`} did not match any
+              business.
+            </div>
+          </Otherwise>
+        </Choose>
       </div>
     );
   }
