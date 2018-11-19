@@ -7,7 +7,9 @@ import './styles.scss';
 // Component
 const Item = (props) => {
   // Variables
-  const { category, name, location } = props.item;
+  const {
+    category, name, location, open
+  } = props.item;
 
   // View
   return (
@@ -21,6 +23,7 @@ const Item = (props) => {
           <li styleName="txt-opening">Opening Hour 08:00 - 22:00</li>
           <li styleName="txt-description">Authentic food and decoration. I..</li>
         </ul>
+        <span styleName={`status ${open ? 'open' : 'closed'}`}>{open ? 'Open' : 'Closed'} now</span>
       </div>
       <div className="card-footer text-muted">{location}</div>
     </div>

@@ -25,3 +25,22 @@
 .txt-description {
   color: #666;
 }
+
+.status {
+  display: block;
+  font: {
+    size: 0.75rem;
+    weight: 600;
+  }
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+
+  &.open {
+    color: #7ed321;
+  }
+
+  &.closed {
+    color: #f42d46;
+  }
+}
