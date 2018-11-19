@@ -8,6 +8,7 @@ Playground repository for mobile search flow built with React.
 - [Browser Support](#browser-support)
 - [Related Projects](#related-projects)
 - [Acknowledgements](#acknowledgements)
+- [Credits](#credits)
 
 ## Live Demo
 
@@ -30,3 +31,7 @@ React & Redux starter kit with best practices bootstrapped with [Create React Ap
 ## Acknowledgements
 
 This project is built and maintained by [Theerawat Pongsupawat](http://www.rxseven.com), frontend developer from Chiang Mai, Thailand.
+
+## Credits
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
