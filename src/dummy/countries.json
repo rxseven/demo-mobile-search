@@ -108,7 +108,7 @@
   { "name": "Israel", "id": "IL" },
   { "name": "Italy", "id": "IT", "data": true },
   { "name": "Jamaica", "id": "JM" },
-  { "name": "Japan", "id": "JP" },
+  { "name": "Japan", "id": "JP", "data": true },
   { "name": "Jersey", "id": "JE" },
   { "name": "Jordan", "id": "JO" },
   { "name": "Kazakhstan", "id": "KZ" },
