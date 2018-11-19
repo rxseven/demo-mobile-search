@@ -9,7 +9,7 @@ $color-active: $color-primary;
 // Container
 .container {
   border-top: #dfdedd solid 1px;
-  background-color: #fff;
+  background-color: $color-white;
   bottom: 0;
   color: #999;
   height: $footer-height-xs;

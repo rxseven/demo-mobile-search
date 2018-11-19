@@ -3,7 +3,7 @@
 
 .suggestion {
   @extend %border-radius;
-  background-color: #fff;
+  background-color: $color-white;
   border: 1px solid $boder-color;
   height: auto;
   left: 0;

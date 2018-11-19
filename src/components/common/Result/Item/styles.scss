@@ -37,10 +37,10 @@
   top: 1.25rem;
 
   &.open {
-    color: #7ed321;
+    color: $color-green;
   }
 
   &.closed {
-    color: #f42d46;
+    color: $color-red;
   }
 }
