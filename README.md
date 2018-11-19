@@ -6,6 +6,7 @@ Playground repository for mobile search flow built with React.
 
 - [Live Demo](#live-demo)
 - [Browser Support](#browser-support)
+- [Related Projects](#related-projects)
 
 ## Live Demo
 
@@ -18,3 +19,9 @@ Playground repository for mobile search flow built with React.
 Because this project uses CSS3 features, it’s only meant for modern browsers. Some browsers currently fail to apply some of the styles correctly.
 
 Chrome and Firefox have full support, but Safari and IE have strange behaviors.
+
+## Related Projects
+
+**[Setup React App](https://github.com/rxseven/setup-react-app)**
+
+React & Redux starter kit with best practices bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
