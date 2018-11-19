@@ -5,7 +5,7 @@ import React from 'react';
 import './styles.scss';
 
 // Component
-const SearchboxContainer = ({ children }) => <div>{children}</div>;
+const SearchboxContainer = ({ children }) => <div styleName="container">{children}</div>;
 
 // Module exportes
 export default SearchboxContainer;
