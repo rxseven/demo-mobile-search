@@ -7,6 +7,7 @@ Playground repository for mobile search flow built with React.
 - [Live Demo](#live-demo)
 - [Browser Support](#browser-support)
 - [Related Projects](#related-projects)
+- [Acknowledgements](#acknowledgements)
 
 ## Live Demo
 
@@ -25,3 +26,7 @@ Chrome and Firefox have full support, but Safari and IE have strange behaviors.
 **[Setup React App](https://github.com/rxseven/setup-react-app)**
 
 React & Redux starter kit with best practices bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## Acknowledgements
+
+This project is built and maintained by [Theerawat Pongsupawat](http://www.rxseven.com), frontend developer from Chiang Mai, Thailand.
