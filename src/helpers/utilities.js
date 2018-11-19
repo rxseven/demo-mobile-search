@@ -1,7 +1,5 @@
-// @flow
-
 // Deley
-export const delay = (callback: Function, duration: number) => {
+export const delay = (callback, duration) => {
   setTimeout(() => {
     callback();
   }, duration);
