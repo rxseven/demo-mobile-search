@@ -1,2 +1,3 @@
-# Mobile Search Flow
-A demo for mobile search flow
+# Mobile Search Flow Playground
+
+Playground repository for mobile search flow built with React.
