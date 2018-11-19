@@ -9,6 +9,16 @@ import './styles.scss';
 
 // Component
 class List extends React.Component {
+  // onMouseEnter handler
+  handleOnMouseEnter = () => {
+    this.props.onMouseOn('suggestionHover');
+  };
+
+  // onMouseLeave handler
+  handleOnMouseLeave = () => {
+    this.props.onMouseOff('suggestionHover');
+  };
+
   // Render list item
   renderItem = (item) => {
     // Variables
@@ -21,14 +31,16 @@ class List extends React.Component {
   // Render component
   render() {
     // Variables
-    const {
-      data, onMouseOff, onMouseOn, visibility
-    } = this.props;
+    const { data, visibility } = this.props;
 
     // View
     return (
       <If condition={visibility && data.length}>
-        <ul onMouseEnter={onMouseOn} onMouseLeave={onMouseOff} styleName="suggestion">
+        <ul
+          onMouseEnter={this.handleOnMouseEnter}
+          onMouseLeave={this.handleOnMouseLeave}
+          styleName="suggestion"
+        >
           {data.map(this.renderItem)}
         </ul>
       </If>
