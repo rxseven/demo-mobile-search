@@ -21,13 +21,20 @@ class Item extends React.Component {
   // Render component
   render() {
     // Variables
-    const { name, id } = this.props.item;
+    const {
+      data, group, name, id
+    } = this.props.item;
+    const isData = !!data;
+    const isGroup = !!group;
 
     // View
     return (
       <li styleName="item">
-        <a href={`#${id}`} onClick={this.handleClick}>
+        <a href={`#${id}`} onClick={this.handleClick} styleName={isData ? 'is-data' : ''}>
           {name}
+          <If condition={isGroup}>
+            <span className="oi oi-layers" styleName="icon" />
+          </If>
         </a>
       </li>
     );
