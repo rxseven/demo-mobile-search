@@ -1,6 +1,6 @@
 {
-  "name": "demo-mobile-search",
-  "description": "A demo for mobile search flow",
+  "name": "playground-mobile-search",
+  "description": "Mobile search flow playground",
   "version": "0.1.0",
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rxseven/demo-mobile-search.git"
+    "url": "https://github.com/rxseven/playground-mobile-search.git"
   },
   "private": true,
   "main": "index.jsx",
