@@ -20,7 +20,7 @@ class List extends React.Component {
   };
 
   // Render list item
-  renderItem = item => <Item item={item} key={item.id} onClick={this.props.onSelect} />;
+  renderItem = item => <Item item={item} key={item.id} />;
 
   // Render component
   render() {
