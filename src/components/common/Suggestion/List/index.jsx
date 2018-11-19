@@ -11,12 +11,12 @@ import './styles.scss';
 class List extends React.Component {
   // onMouseEnter handler
   handleOnMouseEnter = () => {
-    this.props.onMouseOn('suggestionHover');
+    this.props.onMouseOn('suggestionsHover');
   };
 
   // onMouseLeave handler
   handleOnMouseLeave = () => {
-    this.props.onMouseOff('suggestionHover');
+    this.props.onMouseOff('suggestionsHover');
   };
 
   // Render list item
