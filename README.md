@@ -9,6 +9,7 @@ Playground repository for mobile search flow built with React.
 - [Related Projects](#related-projects)
 - [Acknowledgements](#acknowledgements)
 - [Credits](#credits)
+- [Licenses](#licenses)
 
 ## Live Demo
 
@@ -35,3 +36,7 @@ This project is built and maintained by [Theerawat Pongsupawat](http://www.rxsev
 ## Credits
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## Licenses
+
+The content of this project itself is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license](http://creativecommons.org/licenses/by-nc-nd/4.0/), and the underlying source code is licensed under the [GNU AGPLv3 license](https://www.gnu.org/licenses/agpl-3.0).
