@@ -1,0 +1,32 @@
+// Global styles
+@import '../../../../styles/base/settings';
+
+// Variables
+$space-around: 3.15rem;
+
+.wrapper {
+  padding-top: $space-around;
+}
+
+.title {
+  background-color: $color-white;
+  left: 0;
+  margin-top: -$space-around;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.headline {
+  font: {
+    size: 1rem;
+    weight: $font-weight-normal;
+  }
+  margin-bottom: 0;
+}
+
+.list {
+  // No styles
+}

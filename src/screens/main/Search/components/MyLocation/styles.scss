@@ -1,0 +1,31 @@
+// Global styles
+@import '../../../../../styles/base/settings';
+
+// Variables
+$space-gutter: 15px;
+
+.cta-wrapper {
+  border-bottom: 1px solid #cdd4da;
+  display: block;
+  margin-left: -$space-gutter;
+  margin-right: -$space-gutter;
+
+  @media (min-width: $breakpoint-sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.cta {
+  border-radius: 0;
+  color: $color-primary;
+  font-weight: 600;
+  padding: 0.85rem $space-gutter;
+  text-align: left;
+}
+
+.icon {
+  margin-right: 0.25rem;
+  position: relative;
+  top: 2px;
+}

@@ -1,0 +1,32 @@
+// Placeholder selectors
+%reset-outline {
+  box-shadow: none;
+  outline: none;
+}
+
+// Bootstrap buttons and form controls
+:global .btn:focus,
+:global .btn:active:focus,
+:global .btn.active:focus,
+:global .btn.focus,
+:global .btn:active.focus,
+:global .btn.active.focus,
+:global .form-control:focus,
+:global .form-control:active:focus,
+:global .form-control.active:focus,
+:global .form-control.focus,
+:global .form-control:active.focus,
+:global .form-control.active.focus {
+  @extend %reset-outline;
+  border-color: #ced4da;
+}
+
+// Bootstrap list group
+:global .list-group-item:focus,
+:global .list-group-item:active:focus,
+:global .list-group-item.active:focus,
+:global .list-group-item.focus,
+:global .list-group-item:active.focus,
+:global .list-group-item.active.focus {
+  @extend %reset-outline;
+}

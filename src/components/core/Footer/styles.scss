@@ -1,0 +1,70 @@
+// Global styles
+@import '../../../styles/base/settings';
+@import '../../../styles/mixins/transition';
+
+// Variables
+$color-normal: #212529;
+$color-active: $color-primary;
+
+// Container
+.container {
+  border-top: #dfdedd solid 1px;
+  background-color: $color-white;
+  bottom: 0;
+  color: #999;
+  height: $footer-height-xs;
+  left: 0;
+  padding-top: 0.85rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+
+  a {
+    @include transition-link;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    height: $footer-height-sm;
+  }
+}
+
+// Navigation
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+
+  > li {
+    display: inline;
+    font-size: 0.85rem;
+
+    & + li {
+      margin-left: 1rem;
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      font-size: 0.9rem;
+    }
+  }
+
+  :global a {
+    color: $color-normal;
+
+    &.active,
+    &:hover {
+      color: $color-active;
+      text-decoration: none;
+    }
+
+    &.active {
+      cursor: default;
+    }
+  }
+}

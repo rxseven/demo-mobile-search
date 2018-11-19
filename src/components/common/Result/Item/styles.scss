@@ -1,0 +1,46 @@
+// Global styles
+@import '../../../../styles/base/settings';
+
+.headline {
+  color: $color-primary;
+  font-size: 1rem;
+}
+
+.details {
+  font-size: 0.85rem;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.txt-category {
+  font-size: 0.95rem;
+  color: #ffa300;
+}
+
+.txt-opening {
+  margin-bottom: 0.85rem;
+}
+
+.txt-description {
+  color: #666;
+}
+
+.status {
+  display: block;
+  font: {
+    size: 0.75rem;
+    weight: 600;
+  }
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+
+  &.open {
+    color: $color-green;
+  }
+
+  &.closed {
+    color: $color-red;
+  }
+}
