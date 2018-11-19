@@ -9,3 +9,6 @@ export const delay = (callback, duration) => {
 export const reload = () => {
   window.location.reload();
 };
+
+// Get category
+export const getCategory = (categories, id) => categories[id].name;
