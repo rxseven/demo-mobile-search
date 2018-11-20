@@ -162,7 +162,7 @@ class Search extends React.Component {
         }
 
         // Check input value and results
-        if (value && !this.state.results) {
+        if (value && !this.state.result) {
           // Show suggested categories
           this.toggleCategory(true);
         }
