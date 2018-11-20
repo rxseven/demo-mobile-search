@@ -187,6 +187,12 @@ class Search extends React.Component {
           this.toggleResult();
         }
 
+        // Check results
+        if (!state.result) {
+          // Show a current location button
+          this.toggleCurrent(true);
+        }
+
         // Hide sugessted categories
         this.toggleCategory();
 
