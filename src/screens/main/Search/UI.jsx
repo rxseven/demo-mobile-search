@@ -154,9 +154,16 @@ class Search extends React.Component {
     // Input field cases
     switch (name) {
       case SEARCH_FIELDS.name:
-        // Hide results and show suggested categories
+        // Check input value
         if (!value) {
+          // Hide results and show suggested categories
           this.toggleResult();
+          this.toggleCategory(true);
+        }
+
+        // Check input value and results
+        if (value && !this.state.results) {
+          // Show suggested categories
           this.toggleCategory(true);
         }
 
